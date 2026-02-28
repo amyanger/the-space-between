@@ -83,6 +83,20 @@
     pointer-events: none;
     transition: opacity 3s;
   }
+
+  .back-link {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    z-index: 100;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+    color: rgba(255, 220, 140, 0.2);
+    transition: color 0.4s ease;
+  }
+  .back-link:hover { color: rgba(255, 220, 140, 0.5); }
 </style>
 </head>
 <body>
@@ -636,6 +650,8 @@ document.addEventListener('click', function fadePrompt() {
 // initial whisper
 setTimeout(spawnWhisper, 2000);
 </script>
+
+<a href="index.html" class="back-link">&larr; back</a>
 
 </body>
 </html>

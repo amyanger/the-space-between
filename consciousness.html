@@ -82,6 +82,20 @@
     letter-spacing: 0.2em;
     pointer-events: none;
   }
+
+  .back-link {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    z-index: 100;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+    color: rgba(200, 180, 255, 0.2);
+    transition: color 0.4s ease;
+  }
+  .back-link:hover { color: rgba(200, 180, 255, 0.5); }
 </style>
 </head>
 <body>
@@ -442,6 +456,8 @@ setTimeout(() => {
   document.getElementById('proximity-note').style.opacity = '0';
 }, 8000);
 </script>
+
+<a href="index.html" class="back-link">&larr; back</a>
 
 </body>
 </html>
